@@ -55,6 +55,21 @@
         cursor: pointer;
         transition: all 500ms ease;
 }
+    #from{
+        display: none;
+        text-align: center;
+    }
+    input{
+        width: 90%;
+        outline: none;
+        margin: 10px 5%;
+        padding: 15px 10px;
+        font-size: 14px;
+        border: 2px solid silver;
+        border-radius: 5px;
+    }
+    input:focus{}
+
     </style>
 </head>
 <body>
@@ -65,13 +80,13 @@
           <button id="buy">Купить</button>
       </div>
       <form id="from">
-          <input type="text" placeholder="Имя" id="user_name">
-          <input type="text" placeholder="Email" id="user_email">
-          <input type="text" placeholder="Телефон" id="user_phone">
-          <button id="order">Оформить</button>
+             <input type="text" placeholder="Имя" id="user_name">
+             <input type="text" placeholder="Email" id="user_email">
+             <input type="text" placeholder="Телефон" id="user_phone">
+             <button id="order">Оформить</button>
       </form>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
+   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+   <script>
         let tg = window.Telegram.WebApp;
         let buy = document.getElementById("buy")
         let buy = document.getElementById("order")
@@ -85,7 +100,7 @@
         order.addEventListener("click",()=>{
             tg.close();
         });
-</script>
+  </script>
 </body>
 </html>
       
